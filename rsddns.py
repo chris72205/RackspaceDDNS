@@ -1,12 +1,12 @@
 import pyrax
-import urllib3
+import urllib
 
 rsUser = ""
 rsKey = ""
 domainName = ""
 subdomain = ""
 
-response = urllib2.urlopen('http://ipv4.icanhazip.com')
+response = urllib.urlopen('http://ipv4.icanhazip.com')
 ip = response.read().strip()
 
 pyrax.set_setting('identity_type', 'rackspace')
